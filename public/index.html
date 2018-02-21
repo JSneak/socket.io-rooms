@@ -4,11 +4,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
   </head>
   <body>
-
-    <input type="button" onClick="joinRoom1()" value="Join Room 1">
-    <input type="button" onClick="joinRoom2()" value="Join Room 2">
-
-    <link rel="stylesheet" href="css/main.css">
+    <div class="visible" id="join">
+      <input type="button" onClick="joinRoom1()" value="Join Room 1">
+      <input type="button" onClick="joinRoom2()" value="Join Room 2">
+    </div>
+    <div class="hidden" id="leave">
+      <input type="button" onClick="leaveRoom1()" value="Leave Room 1">
+      <input type="button" onClick="leaveRoom2()" value="Leave Room 2">
+    </div>
+    <link rel="stylesheet" href="./css/style.css">
     <script src="./js/index.js"></script>
   </body>
 </html>
